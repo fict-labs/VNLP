@@ -52,7 +52,8 @@ LPs (red boxes) and recognized text showed at the top of the box:</i>
 
 
 ## 4. Citations
-<span style="color: red"> <b> Please cite the following papers when using the dataset VNLP. </b> </span>
+
+**Please cite the following papers when using the dataset VNLP**
 ```
 [1] Thi-Anh-Loan Trinh, The Anh Pham, and Van-Dung Hoang (2022). "Layout-invariant license plate detection and recognition". International 
 Conference on Multimedia Analysis and Pattern Recognition (MAPR2022), pp. 1-6.
