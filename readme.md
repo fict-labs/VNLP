@@ -10,6 +10,11 @@ Most of the images have been taken at a Transportation Registration Center in Vi
 ## 2. An advanced system for layout-invariant license plate detection and recognition
 <div style='text-align: justify;'>
 We have developed a system for layout-invariant license plate detection and recognition. The proposed system, as illustrated in Figure 2, is composed of two main components: LP detection and LP prediction. The detector takes the input as an image with the size of 384×384×3 and outputs the LP image patches and LP shape types. Here, each LP image is assigned with a shape type: either rectangle (i.e., one-row label) or square (i.e., two-row label). Next, the LP image is resized to 320×64×3 or 160×128×3 with respect to the LP shape type of rectangle or square. To handle the variable lengths of LPs, the LP predictor is designed to predict n_max characters given an input LP. In our experiments, we set n_max = 10 which is appropriate for the LP layouts of many countries or regions. In the next parts, we will describe these components in detail.
+<br>
+<i>The overall architecture of the proposed system:</i>
+
+![Fig2](./images/Fig2.png)
+
 </div>
 
 ## 3. Experimental results on the VNLP dataset
@@ -18,8 +23,7 @@ Table III presents the precision and recall of the LP detector,
 LP predictor and the full system. In addition, we also provide
 the accuracy of predicting the shape type of LPs (i.e. square or
 rectangle) as well as the inference times on CPU environment.
-As can be seen, the proposed LP detector is capable of cor-
-rectly detect the LPs with a high level of precision (+98.9%),
+As can be seen, the proposed LP detector is capable of correctly detect the LPs with a high level of precision (+98.9%),
 while also achieving nearly perfect score (99.0%) on the task
 of shape classification. The detection time is about 91.2 FPS
 on a CPU machine.
@@ -54,10 +58,8 @@ LPs (red boxes) and recognized text showed at the top of the box:</i>
 ## 4. Citations
 
 **Please cite the following papers when using the dataset VNLP:**
-```
+
 [1] Thi-Anh-Loan Trinh, The Anh Pham, and Van-Dung Hoang (2022). "Layout-invariant license plate detection and recognition". International 
 Conference on Multimedia Analysis and Pattern Recognition (MAPR2022), pp. 1-6.
 
 [2] TA Pham (2023). "Effective deep neural networks for license plate detection and recognition". The Visual Computer, Vol. 39, No. 1, pp. 927-941.
-```
-The papers can be downloaded from [here](https://drive.google.com/drive/folders/1CCDEQ4ydZmhrTa7rgq9DDpVHv8ZZ5Zpi?usp=sharing).
