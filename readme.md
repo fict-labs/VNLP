@@ -10,12 +10,11 @@ Most of the images have been taken at a Transportation Registration Center in Vi
 ## 2. An advanced system for layout-invariant license plate detection and recognition
 <div style='text-align: justify;'>
 We have developed a system for layout-invariant license plate detection and recognition. The proposed system, as illustrated in Figure 2, is composed of two main components: LP detection and LP prediction. The detector takes the input as an image with the size of 384×384×3 and outputs the LP image patches and LP shape types. Here, each LP image is assigned with a shape type: either rectangle (i.e., one-row label) or square (i.e., two-row label). Next, the LP image is resized to 320×64×3 or 160×128×3 with respect to the LP shape type of rectangle or square. To handle the variable lengths of LPs, the LP predictor is designed to predict n_max characters given an input LP. In our experiments, we set n_max = 10 which is appropriate for the LP layouts of many countries or regions. In the next parts, we will describe these components in detail.
+</div>
 <br>
 <i>The overall architecture of the proposed system:</i>
 
 ![Fig2](./images/Fig2.png)
-
-</div>
 
 ## 3. Experimental results on the VNLP dataset
 <div style='text-align: justify;'>
