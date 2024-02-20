@@ -1,20 +1,40 @@
-# VNLP (Vietnamese license plate dataset)
+<style>
+  .center {
+    text-align: center;
+  }
+</style>
+
+
+# VNLP (Vietnamese License Plate) Dataset
 
 ## 1. Description of VNLP dataset
 <div style='text-align: justify;'>
 
 We have manually created a large Vietnamese LP dataset (VNLP) composed of around 37,300 images. The dataset can be freely downloaded [here](https://drive.google.com/drive/folders/19OnlE0gFXEMPyngxRZ980d4z0fGQ-C7T?usp=sharing).
 Most of the images have been taken at a Transportation Registration Center in Vietnam. The LP images are captured by a camera mounted at a fixed position during the period of one year. Each LP image contains n characters with 6 ≤ n ≤ 9. The sizes of LP images are considerably varying in the ranges: 30 < width < 638 and 26 < height < 240, that raises difficulty for the LP detector and predictor. Each image is carefully annotated to support the following groundtruth: the coordinates of each LP in the means of bounding box representation and the LP characters. Furthermore, the dataset is divided into two collections with respect to the LP shape type: one-row subset (19,085 images) and two-row subset (18,215 images). For training the detection model, the two subsets are merged and then randomly divided as follows: 80% for the training part, 5% for validation, and 15% for the testing part. On the other hand, we have trained two instances of the prediction CNN model with respect to the two subsets by using the same data splitting ratio: 80%/5%/15% (i.e., training/validation/testing).
+
+Some examples of the dataset are provided here:
+
+<div class="center">
+
+![Fig1](./images/Fig1.jpg)
+Figure 1. Some examples of VNLP dataset
+
+
 </div>
 
 ## 2. An advanced system for layout-invariant license plate detection and recognition
 <div style='text-align: justify;'>
 We have developed a system for layout-invariant license plate detection and recognition. The proposed system, as illustrated in Figure 2, is composed of two main components: LP detection and LP prediction. The detector takes the input as an image with the size of 384×384×3 and outputs the LP image patches and LP shape types. Here, each LP image is assigned with a shape type: either rectangle (i.e., one-row label) or square (i.e., two-row label). Next, the LP image is resized to 320×64×3 or 160×128×3 with respect to the LP shape type of rectangle or square. To handle the variable lengths of LPs, the LP predictor is designed to predict n_max characters given an input LP. In our experiments, we set n_max = 10 which is appropriate for the LP layouts of many countries or regions. In the next parts, we will describe these components in detail.
-</div>
-<br>
-<i>The overall architecture of the proposed system:</i>
+
+The overall architecture of the proposed system:
+<div class="center">
 
 ![Fig2](./images/Fig2.png)
+Figure 2. The overall architecture
+
+</div>
+</div>
 
 ## 3. Experimental results on the VNLP dataset
 <div style='text-align: justify;'>
@@ -62,3 +82,5 @@ LPs (red boxes) and recognized text showed at the top of the box:</i>
 Conference on Multimedia Analysis and Pattern Recognition (MAPR2022), pp. 1-6.
 
 [2] TA Pham (2023). "Effective deep neural networks for license plate detection and recognition". The Visual Computer, Vol. 39, No. 1, pp. 927-941.
+
+<i><b>If you need more information, please contact: phamtheanh@hdu.edu.vn </b> </i>
