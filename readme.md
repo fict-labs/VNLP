@@ -1,10 +1,3 @@
-<style>
-  .center {
-    text-align: center;
-  }
-</style>
-
-
 # VNLP (Vietnamese License Plate) Dataset
 
 ## 1. Description of VNLP dataset
@@ -15,7 +8,7 @@ Most of the images have been taken at a Transportation Registration Center in Vi
 
 Some examples of the dataset are provided here:
 
-<div class="center">
+<div class="center" style='text-align: center;'>
 
 ![Fig1](./images/Fig1.jpg)
 Figure 1. Some examples of VNLP dataset
@@ -28,7 +21,7 @@ Figure 1. Some examples of VNLP dataset
 We have developed a system for layout-invariant license plate detection and recognition. The proposed system, as illustrated in Figure 2, is composed of two main components: LP detection and LP prediction. The detector takes the input as an image with the size of 384×384×3 and outputs the LP image patches and LP shape types. Here, each LP image is assigned with a shape type: either rectangle (i.e., one-row label) or square (i.e., two-row label). Next, the LP image is resized to 320×64×3 or 160×128×3 with respect to the LP shape type of rectangle or square. To handle the variable lengths of LPs, the LP predictor is designed to predict n_max characters given an input LP. In our experiments, we set n_max = 10 which is appropriate for the LP layouts of many countries or regions. In the next parts, we will describe these components in detail.
 
 The overall architecture of the proposed system:
-<div class="center">
+<div class="center" style='text-align: center;'>
 
 ![Fig2](./images/Fig2.png)
 Figure 2. The overall architecture
