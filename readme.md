@@ -4,7 +4,7 @@
 <div style='text-align: justify;'>
 
 We have manually created a large Vietnamese LP dataset (VNLP) composed of around 37,300 images. The dataset can be freely downloaded [here](https://drive.google.com/drive/folders/19OnlE0gFXEMPyngxRZ980d4z0fGQ-C7T?usp=sharing).
-Most of the images have been taken at a Transportation Registration Center in Vietnam. The LP images are captured by a camera mounted at a fixed position during the period of one year. Each LP image contains n characters with 6 ≤ n ≤ 9. The sizes of LP images are considerably varying in the ranges: 30 < width < 638 and 26 < height < 240, that raises difficulty for the LP detector and predictor. Each image is carefully annotated to support the following groundtruth: the coordinates of each LP in the means of bounding box representation and the LP characters. Furthermore, the dataset is divided into two collections with respect to the LP shape type: one-row subset (19,085 images) and two-row subset (18,215 images). For training the detection model, the two subsets are merged and then randomly divided as follows: 80% for the training part, 5% for validation, and 15% for the testing part. On the other hand, we have trained two instances of the prediction CNN model with respect to the two subsets by using the same data splitting ratio: 80%/5%/15% (i.e., training/validation/testing).
+Each LP image contains n characters with 6 ≤ n ≤ 9. The sizes of LP images are considerably varying in the ranges: 30 < width < 638 and 26 < height < 240, that raises difficulty for the LP detector and predictor. Each image is carefully annotated to support the following groundtruth: the coordinates of each LP in the means of bounding box representation and the LP characters. Furthermore, the dataset is divided into two collections with respect to the LP shape type: one-row subset (19,085 images) and two-row subset (18,215 images). For training the detection model, the two subsets are merged and then randomly divided as follows: 80% for the training part, 5% for validation, and 15% for the testing part. On the other hand, we have trained two instances of the prediction CNN model with respect to the two subsets by using the same data splitting ratio: 80%/5%/15% (i.e., training/validation/testing).
 
 Some examples of the dataset are provided here:
 <div class="center" style='text-align: center;'>
@@ -50,7 +50,7 @@ the detection results to the recognition model, the overall
 performance of the full system is still encouraging in the
 means of precision and recall scores (+95.3%). The inference
 speed is about 38.6 FPS, indicating that a real-time application
-of this work is practicable. Figure 6 shows visually several
+of this work is practicable. Figure 3 shows visually several
 examples of our full system. As can be observed, despite the
 significant distortion of input images (e.g., low resolutions,
 diverse layout, noise), the proposed system still successfully
@@ -62,7 +62,7 @@ Examples of our correct results on Vietnamese LP dataset: detected
 LPs (red boxes) and recognized text showed at the top of the box:
 </div>
 
-![Fig6](./images/fig6.png)
+![Fig3](./images/fig3.png)
 
 
 ## 4. Citations
