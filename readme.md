@@ -10,8 +10,7 @@ Some examples of the dataset are provided here:
 
 <div class="center" style='text-align: center;'>
 
-![Fig1](./images/Fig1.jpg)
-Figure 1. Some examples of VNLP dataset
+![Fig1](./images/Fig1.png)
 
 
 </div>
@@ -24,7 +23,6 @@ The overall architecture of the proposed system:
 <div class="center" style='text-align: center;'>
 
 ![Fig2](./images/Fig2.png)
-Figure 2. The overall architecture
 
 </div>
 </div>
