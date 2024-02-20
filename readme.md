@@ -62,7 +62,7 @@ Examples of our correct results on Vietnamese LP dataset: detected
 LPs (red boxes) and recognized text showed at the top of the box:
 </div>
 
-![Fig3](./images/fig3.png)
+![Fig3](./images/Fig3.png)
 
 
 ## 4. Citations
