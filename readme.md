@@ -72,6 +72,19 @@ LPs (red boxes) and recognized text showed at the top of the box:
 [1] Thi-Anh-Loan Trinh, The Anh Pham, and Van-Dung Hoang (2022). "Layout-invariant license plate detection and recognition". International 
 Conference on Multimedia Analysis and Pattern Recognition (MAPR2022), pp. 1-6.
 
-[2] TA Pham (2023). "Effective deep neural networks for license plate detection and recognition". The Visual Computer, Vol. 39, No. 1, pp. 927-941.
+[2] TA Pham (2023). "Effective deep neural networks for license plate detection and recognition". The Visual Computer, Vol. 39, No. 3, pp. 927-941.
 
+```bash
+@article{PhamTA23,
+	title = {Effective deep neural networks for license plate detection and recognition},
+	journal = {The Visual Computer},
+	volume = {39},
+	number = {3},
+	year = {2023},
+	author = {Pham, The-Anh},
+	pages = {927-–941},
+}
+```
+
+## 5. Contact
 <i><b>If you need more information, please contact: phamtheanh@hdu.edu.vn </b> </i>
